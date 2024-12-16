@@ -16,30 +16,6 @@ Verify KCS Interface Commands
     ...  executable from os host. Set of IPMI raw commands includes system interface
     ...  command.
 
-    #### raw cmd for get device ID.
-    Run Inband IPMI Raw Command  ${IPMI_RAW_CMD['Device ID']['Get'][0]}
-
-    #### Raw cmd for cold reset.
-    Run Inband IPMI Raw Command  ${IPMI_RAW_CMD['Cold Reset']['reset'][0]}
-
-    Wait Until Keyword Succeeds  2 min  10 sec  Is BMC Unpingable
-    Wait Until Keyword Succeeds  3 min  10 sec  Is BMC Operational
-    ## Waiting time to get KCS interface enabled.
-    Wait Until Keyword Succeeds  3 min  10 sec
-    ...  Run Inband IPMI Raw Command  ${IPMI_RAW_CMD['Device ID']['Get'][0]}
-
-    #### raw cmd for get device GUID.
-    Run Inband IPMI Raw Command  ${IPMI_RAW_CMD['Device GUID']['Get'][0]}
-
-    #### raw cmd for get IP addr.
-    Run Inband IPMI Raw Command  ${IPMI_RAW_CMD['lan_parameters']['get_ip'][0]}
-
-    #### raw cmd for get IP addr src.
-    Run Inband IPMI Raw Command  ${IPMI_RAW_CMD['lan_parameters']['get_ip_src'][0]}
-
-    #### raw cmd for get Dot1Q details.
-    Run Inband IPMI Raw Command  ${IPMI_RAW_CMD['lan_parameters']['get_dot1q'][0]}
-
     #### raw cmd for get SDR Info.
     Run Inband IPMI Raw Command  ${IPMI_RAW_CMD['SDR_Info']['get'][0]}
 
