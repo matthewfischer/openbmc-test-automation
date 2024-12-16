@@ -33,8 +33,7 @@ Verify Lanplus Interface Commands
 
     ## Executing system interface command on lanplus interface.
     #### raw cmd for get SDR Info.
-    Run Keyword and Expect Error  *Insufficient privilege level*
-    ...  Run External IPMI Raw Command  ${IPMI_RAW_CMD['SDR_Info']['get'][0]}
+    Run External IPMI Raw Command  ${IPMI_RAW_CMD['SDR_Info']['get'][0]}
 
     #### raw cmd for get Chassis status.
     Run External IPMI Raw Command  ${IPMI_RAW_CMD['Chassis_status']['get'][0]}
