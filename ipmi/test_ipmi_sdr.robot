@@ -410,7 +410,7 @@ Suite Setup Execution
     [Documentation]  Do the initial suite setup.
 
     Redfish.Login
-    Redfish Power On  stack_mode=skip  quiet=1
+    ###Redfish Power On  stack_mode=skip  quiet=1
 
     ${record_id}=  Get SDR Record ID
     Set Suite Variable  ${record_id}
