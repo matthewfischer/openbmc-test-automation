@@ -91,7 +91,7 @@ Test GPU SDR Info At Power On
 
     [Tags]  Test_GPU_SDR_Info_At_Power_On
 
-    Redfish Power On  stack_mode=skip  quiet=1
+    #### Redfish Power On  stack_mode=skip  quiet=1
     Test SDR Info  gv100card
 
 
